@@ -4,10 +4,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-transform: capitalize;
+  overflow: hidden;
 }
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  overflow-y: hidden;
 }
 
 .app {
