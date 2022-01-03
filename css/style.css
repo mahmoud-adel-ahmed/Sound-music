@@ -4,13 +4,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-transform: capitalize;
-  overflow: hidden;
 }
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  position: relative;
-  overflow-y: hidden;
 }
 
 .app {
@@ -33,7 +30,6 @@ body {
 
 .app header {
   text-align: center;
-  width: 100%;
 }
 
 .app header h1 {
@@ -44,7 +40,7 @@ body {
 
 .app header p {
   font-size: 25px;
-  color: #777;
+  color: #555;
 }
 
 .app .colors {
@@ -55,6 +51,7 @@ body {
 }
 
 .app .colors div {
+  width: 100px;
   height: 100px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -63,19 +60,19 @@ body {
 }
 
 .app .colors .color1 {
-  background: #0b0fda;
+  background: rgba(245, 13, 13, 0.932);
 }
 
 .app .colors .color2 {
-  background: #e73f21;
-}
-
-.app .colors .color3 {
   background: #6923eb;
 }
 
-.app .colors .color4 {
+.app .colors .color3 {
   background: #2be91a;
+}
+
+.app .colors .color4 {
+  background: #e73f21;
 }
 
 .app .colors .color5 {
@@ -127,13 +124,13 @@ body {
 @media screen and (max-width: 992px) {
   .app header h1 {
     font-size: 30px;
-    margin: 15px 0;
+    margin: 10px 0;
   }
   .app header p {
-    font-size: 17px;
+    font-size: 16px;
   }
   .app .colors div {
-    height: 60px;
+    height: 75px;
   }
   .app .visual div {
     width: 30px;

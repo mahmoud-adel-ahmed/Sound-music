@@ -3,14 +3,11 @@
   padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  overflow: hidden;
 }
 
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  position: relative;
-  overflow-y: hidden;
 }
 
 .app {
@@ -22,7 +19,6 @@ body {
   z-index: -1;
   header {
     text-align: center;
-    width: 100%;
     h1 {
       font-size: 45px;
       margin: 25px 0;
@@ -30,29 +26,29 @@ body {
     }
     p {
       font-size: 25px;
-      color: #777;
+      color: #555;
     }
   }
   .colors {
     display: flex;
     width: 100%;
     div {
-      // width: 100px;
+      width: 100px;
       height: 100px;
       flex: 1;
       cursor: pointer;
     }
     .color1 {
-      background: rgb(11, 15, 218);
+      background: rgba(245, 13, 13, 0.932);
     }
     .color2 {
-      background: rgb(231, 63, 33);
-    }
-    .color3 {
       background: rgb(105, 35, 235);
     }
-    .color4 {
+    .color3 {
       background: rgb(43, 233, 26);
+    }
+    .color4 {
+      background: rgb(231, 63, 33);
     }
     .color5 {
       background: rgb(10, 166, 228);
@@ -94,15 +90,15 @@ body {
     header {
       h1 {
         font-size: 30px;
-        margin: 15px 0;
+        margin: 10px 0;
       }
       p {
-        font-size: 17px;
+        font-size: 16px;
       }
     }
     .colors {
       div {
-        height: 60px;
+        height: 75px;
       }
     }
     .visual {
