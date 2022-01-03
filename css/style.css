@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: -1;
+}
+
+.app header {
+  text-align: center;
+  width: 100%;
+}
+
+.app header h1 {
+  font-size: 45px;
+  margin: 25px 0;
+  color: red;
+}
+
+.app header p {
+  font-size: 25px;
+  color: #777;
+}
+
+.app .colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.app .colors div {
+  height: 100px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+}
+
+.app .colors .color1 {
+  background: #0b0fda;
+}
+
+.app .colors .color2 {
+  background: #e73f21;
+}
+
+.app .colors .color3 {
+  background: #6923eb;
+}
+
+.app .colors .color4 {
+  background: #2be91a;
+}
+
+.app .colors .color5 {
+  background: #0aa6e4;
+}
+
+.app .colors .color6 {
+  background: #c7e907;
+}
+
+.app .visual div {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  z-index: -1;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 80%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .app header h1 {
+    font-size: 30px;
+    margin: 15px 0;
+  }
+  .app header p {
+    font-size: 17px;
+  }
+  .app .colors div {
+    height: 60px;
+  }
+  .app .visual div {
+    width: 30px;
+    height: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

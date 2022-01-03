@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: -1;
+  header {
+    text-align: center;
+    width: 100%;
+    h1 {
+      font-size: 45px;
+      margin: 25px 0;
+      color: red;
+    }
+    p {
+      font-size: 25px;
+      color: #777;
+    }
+  }
+  .colors {
+    display: flex;
+    width: 100%;
+    div {
+      // width: 100px;
+      height: 100px;
+      flex: 1;
+      cursor: pointer;
+    }
+    .color1 {
+      background: rgb(11, 15, 218);
+    }
+    .color2 {
+      background: rgb(231, 63, 33);
+    }
+    .color3 {
+      background: rgb(105, 35, 235);
+    }
+    .color4 {
+      background: rgb(43, 233, 26);
+    }
+    .color5 {
+      background: rgb(10, 166, 228);
+    }
+    .color6 {
+      background: rgb(199, 233, 7);
+    }
+  }
+  .visual {
+    div {
+      width: 50px;
+      border-radius: 50%;
+      height: 50px;
+      position: absolute;
+      bottom: 0;
+      left: 20%;
+      z-index: -1;
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0;
+    left: 80%;
+  }
+}
+
+// media
+@media screen and (max-width: 992px) {
+  .app {
+    header {
+      h1 {
+        font-size: 30px;
+        margin: 15px 0;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+    .colors {
+      div {
+        height: 60px;
+      }
+    }
+    .visual {
+      div {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
