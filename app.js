@@ -3,17 +3,17 @@ window.addEventListener("load", () => {
   const pads = document.querySelectorAll(".colors div");
   const visual = document.querySelector(".visual");
   const colors = [
-    "rgb(238, 82, 113)",
-    "rgb(231, 63, 33)",
-    "rgb(105, 35, 235)",
-    "rgb(43, 233, 26)",
-    "rgb(10, 166, 228)",
-    "rgb(199, 233, 7)",
+    rgb(245, 13, 13),
+    rgb(105, 35, 235),
+    rgb(43, 233, 26),
+    rgb(231, 63, 33),
+    rgb(10, 166, 228),
+    rgb(199, 233, 7),
   ];
 
   // create sounds
-  pads.forEach((color, index) => {
-    color.addEventListener("click", function () {
+  pads.forEach((pad, index) => {
+    pad.addEventListener("click", function () {
       sounds[index].currentTime = 0;
       sounds[index].play();
       makebubbles(index);
@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
     const bubble = document.createElement("div");
     visual.appendChild(bubble);
     bubble.style.backgroundColor = colors[index];
-    bubble.style.animation = "jump 1s ease-in-out";
+    bubble.style.animation = "jump 1s linear";
     bubble.addEventListener("animationend", function () {
       visual.removeChild(this);
     });
