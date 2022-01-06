@@ -12,19 +12,19 @@ window.addEventListener("load", () => {
   ];
 
   // create sounds
-  pads.forEach((pad, index) => {
+  pads.forEach((pad, i) => {
     pad.addEventListener("click", function () {
-      sounds[index].currentTime = 0;
-      sounds[index].play();
-      makebubbles(index);
+      sounds[i].currentTime = 0;
+      sounds[i].play();
+      makebubbles(i);
     });
   });
 
   // create bubbles
-  const makebubbles = (index) => {
+  const makebubbles = (i) => {
     const bubble = document.createElement("div");
     visual.appendChild(bubble);
-    bubble.style.backgroundColor = colors[index];
+    bubble.style.backgroundColor = colors[i];
     bubble.style.animation = "jump 1s linear";
     bubble.addEventListener("animationend", function () {
       visual.removeChild(this);
